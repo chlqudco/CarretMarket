@@ -8,24 +8,78 @@
 
     <ImageView
         android:id="@+id/LogInCarrotImageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="30dp"
-        android:src="@drawable/carrot_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:src="@drawable/carrot_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/LogInMainCarrotMarketTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="당군마켓"
+        android:fontFamily="@font/diary_font"
+        android:text="@string/carretMarketName"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/LogInCarrotImageView"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LogInCarrotImageView" />
+
+
+    <EditText
+        android:id="@+id/LogInIdEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="@drawable/log_in_edittext_background"
+        android:drawableStart="@drawable/id_icon"
+        android:drawablePadding="10dp"
+        android:hint="아이디"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LogInMainCarrotMarketTextView" />
+
+    <EditText
+        android:id="@+id/LogInPasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/log_in_edittext_background"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="10dp"
+        android:hint="비밀번호"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LogInIdEditText" />
+
+    <Button
+        android:id="@+id/LogInSignInButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF9800"
+        android:stateListAnimator="@null"
+        android:text="로그인"
+        app:layout_constraintEnd_toEndOf="@id/LogInPasswordEditText"
+        app:layout_constraintStart_toStartOf="@id/LogInPasswordEditText"
+        app:layout_constraintTop_toBottomOf="@id/LogInPasswordEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LogInSignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:text="@string/signUp"
+        app:layout_constraintEnd_toEndOf="@id/LogInSignInButton"
+        app:layout_constraintTop_toBottomOf="@id/LogInSignInButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
