@@ -6,6 +6,12 @@
 - 2022-06-30 : 로그인 xml 화면 제작
   - 폰트 다운, 무료 당근 이미지 다운
   - id, password edittext drawable 제작 
+---
+- 2022-07-01 : 메인화면 제작 도입
+  - 싱글 액티비티를 위한 Navigation Graph활용
+  - bottom navigation 컴포넌트 사용 및 Navigation Graph와 연동
+  - *바텀 네비 메뉴의 id와 네비 그래프의 id를 같게 하면 서로 연동이 됨*
+ 
 
 
 
