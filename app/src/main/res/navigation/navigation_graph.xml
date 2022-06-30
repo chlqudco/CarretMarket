@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/itemListFragment">
+
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.chlqudco.develop.carretmarket.ItemListFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" />
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.chlqudco.develop.carretmarket.ChatListFragment"
+        android:label="fragment_chat_list"
+        tools:layout="@layout/fragment_chat_list" />
+    <fragment
+        android:id="@+id/myPageFragment"
+        android:name="com.chlqudco.develop.carretmarket.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" />
+</navigation>

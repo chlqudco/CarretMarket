@@ -4,8 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/drawable/id_background.xml" value="0.351" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/drawable/selector_menu_color.xml" value="0.2975" />
         <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/layout/activity_log_in.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/layout/fragment_chat_list.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/layout/fragment_item_list.xml" value="0.338768115942029" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/layout/fragment_my_page.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/CarretMarket/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
