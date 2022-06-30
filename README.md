@@ -9,7 +9,8 @@
 
 
 
-- 화면 예시
+##화면 구성
 
 - 로그인 화면
+- ![image](https://user-images.githubusercontent.com/68932465/176664428-3d4d9a9d-d4ef-4205-9ecf-3c7d12b87732.png)
 
