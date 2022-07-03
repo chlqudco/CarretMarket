@@ -1,11 +1,5 @@
 package com.chlqudco.develop.carretmarket.presentation.list
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import com.chlqudco.develop.carretmarket.R
-import com.chlqudco.develop.carretmarket.databinding.FragmentChatListBinding
 import com.chlqudco.develop.carretmarket.databinding.FragmentItemListBinding
 import com.chlqudco.develop.carretmarket.presentation.BaseFragment
 import org.koin.android.ext.android.inject
@@ -20,6 +14,25 @@ internal class ItemListFragment : BaseFragment<ItemListViewModel,FragmentItemLis
         fun newInstance() = ItemListFragment()
     }
 
-    override fun observeData() {
+    //라이브 데이터가 바뀜에 따라 행동하는게 다름
+    override fun observeData() = viewModel.productListStateLiveData.observe(this){
+        when(it){
+            is ItemListState.UnInitialized -> {
+                initViews(binding)
+            }
+            is ItemListState.Loading -> {
+               // handleLoadingState()
+            }
+            is ItemListState.Success -> {
+               // handleSuccessState(it)
+            }
+            is ItemListState.Error -> {
+               // handleErrorState()
+            }
+        }
+    }
+
+    private fun initViews(binding: FragmentItemListBinding) = with(binding){
+
     }
 }

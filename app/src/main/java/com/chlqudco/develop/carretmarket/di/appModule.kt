@@ -7,6 +7,7 @@ import com.chlqudco.develop.carretmarket.data.network.provideProductRetrofit
 import com.chlqudco.develop.carretmarket.data.repository.DefaultProductRepository
 import com.chlqudco.develop.carretmarket.data.repository.ProductRepository
 import com.chlqudco.develop.carretmarket.domain.GetProductItemUseCase
+import com.chlqudco.develop.carretmarket.domain.GetProductListUseCase
 import com.chlqudco.develop.carretmarket.presentation.chat.ChatListViewModel
 import com.chlqudco.develop.carretmarket.presentation.list.ItemListViewModel
 import com.chlqudco.develop.carretmarket.presentation.main.MainViewModel
@@ -20,11 +21,12 @@ val appModule = module {
     //뷰모델
     viewModel { MainViewModel() }
     viewModel { ChatListViewModel() }
-    viewModel { ItemListViewModel() }
+    viewModel { ItemListViewModel(get()) }
     viewModel { MyPageViewModel() }
 
     //유스케이스
     factory { GetProductItemUseCase(get()) }
+    factory { GetProductListUseCase(get()) }
 
     //코루틴 디스패처
     single { Dispatchers.IO }
