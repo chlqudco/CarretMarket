@@ -11,7 +11,8 @@
   - 싱글 액티비티를 위한 Navigation Graph활용
   - bottom navigation 컴포넌트 사용 및 Navigation Graph와 연동
   - 배운점 : 바텀 네비 메뉴의 id와 네비 그래프의 id를 같게 하면 서로 연동이 됨
- 
+---
+- 2022-07-13 : 클린 아키텍쳐 기반 MVVM 및 Koin Set Up
 
 
 
