@@ -12,12 +12,16 @@
   - bottom navigation 컴포넌트 사용 및 Navigation Graph와 연동
   - 배운점 : 바텀 네비 메뉴의 id와 네비 그래프의 id를 같게 하면 서로 연동이 됨
 ---
-- 2022-07-13 : 클린 아키텍쳐 기반 MVVM 및 Koin Set Up
-
+- 2022-07-03 : 클린 아키텍쳐 기반 MVVM 및 Koin Set Up
+  - 할일이 굉장히 많은것 같다. data, domain, presentation 레이어로 나누고 또 그 안에서 여러 패키지와 클래스 파일을 만들었다.
+  - 이게 끝이면 다행인데 Koin 때문에 더 복잡해져서 머리가 상당히 아프다. 더 열심히 공부해서 빨리 익혀야지
+---
+- 2022-07-04 : 상품 리스트 화면 제작 도입
+  - RecyclerView, Floatting Action Button, Action Bar 이용
 
 
 ##화면 구성
 
-- 로그인 화면
+-            로그인 화면                             물품 리스트 화면
 - ![image](https://user-images.githubusercontent.com/68932465/176664428-3d4d9a9d-d4ef-4205-9ecf-3c7d12b87732.png)
-
+    ![KakaoTalk_20220704_001503677](https://user-images.githubusercontent.com/68932465/177046198-187d445e-0e52-4962-8960-3e1cf4064cee.jpg)
