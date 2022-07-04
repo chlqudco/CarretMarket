@@ -24,7 +24,8 @@
 
 ##화면 구성
 
--            로그인 화면                             물품 리스트 화면                    채팅 목록 화면
+-            로그인 화면                             물품 리스트 화면       
 - ![image](https://user-images.githubusercontent.com/68932465/176664428-3d4d9a9d-d4ef-4205-9ecf-3c7d12b87732.png)
       ![KakaoTalk_20220704_001503677](https://user-images.githubusercontent.com/68932465/177046198-187d445e-0e52-4962-8960-3e1cf4064cee.jpg)
-      ![KakaoTalk_20220705_001715502](https://user-images.githubusercontent.com/68932465/177182874-ca6e3d14-0de1-4ec4-838d-923dc8d06e57.jpg)
+-            채팅 목록 화면
+- ![KakaoTalk_20220705_001715502](https://user-images.githubusercontent.com/68932465/177182874-ca6e3d14-0de1-4ec4-838d-923dc8d06e57.jpg)
