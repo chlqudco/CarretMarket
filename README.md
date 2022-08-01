@@ -20,7 +20,8 @@
   - RecyclerView, Floatting Action Button, Action Bar 이용
 ---
 - 2022-07-05 : 상품 리스트 리사이클러 어댑터 & 스와이프 레이아웃 구현, 채팅 목록 화면 구현
-
+---
+- 2022-08-01 : my Page XML 조작 1차
 
 ##화면 구성
 
