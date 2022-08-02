@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">CarretMarket</string>
+    <string name="app_name">당군마켓</string>
     <string name="carretMarketName">당군마켓</string>
     <string name="signUp"><u>회원가입</u></string>
+    <string name="sellHistory">판매내역</string>
+    <string name="likeList">관심목록</string>
+    <string name="buyHistory">구매내역</string>
 </resources>

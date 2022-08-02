@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/itemChatListUserNameTextView"
-        android:text="6974분 전"
+        android:text="30분 전"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@id/itemChatListUserNameTextView"
         android:layout_marginStart="10dp"
@@ -45,7 +45,7 @@
         android:layout_marginTop="5dp"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/itemChatListUserNameTextView"
-        android:text="제가 살게요 주인님ㅠㅠ"
+        android:text="직거래는 어디서 할까요?"
         android:layout_height="wrap_content"/>
 
     <ImageView

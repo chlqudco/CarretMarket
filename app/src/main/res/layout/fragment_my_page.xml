@@ -19,21 +19,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/itemSearchButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:src="@drawable/ic_search"
-        app:layout_constraintBottom_toBottomOf="@id/itemListView"
-        app:layout_constraintEnd_toStartOf="@id/itemSelectListButton"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/itemSelectListButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/ic_select_list"
+        android:src="@drawable/ic_baseline_settings_24"
         app:layout_constraintBottom_toBottomOf="@id/itemListView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,5 +38,80 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 판매내역 버튼 -->
+    <ImageButton
+        android:id="@+id/myPageSellHistoryImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/drawable_pink_circle"
+        android:src="@drawable/ic_select_list"
+        app:layout_constraintEnd_toStartOf="@id/myPageBuyHistoryImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemListView"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/myPageSellHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sellHistory"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/myPageSellHistoryImageButton"
+        app:layout_constraintStart_toStartOf="@id/myPageSellHistoryImageButton"
+        app:layout_constraintEnd_toEndOf="@id/myPageSellHistoryImageButton"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <!-- 구매내역 버튼 -->
+    <ImageButton
+        android:id="@+id/myPageBuyHistoryImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_pink_circle"
+        android:src="@drawable/ic_item_list"
+        app:layout_constraintEnd_toStartOf="@id/myPageLikeListImageButton"
+        app:layout_constraintTop_toTopOf="@id/myPageSellHistoryImageButton"
+        app:layout_constraintStart_toEndOf="@id/myPageSellHistoryImageButton"
+        app:layout_constraintBottom_toBottomOf="@id/myPageSellHistoryImageButton"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/myPageBuyHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buyHistory"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/myPageBuyHistoryImageButton"
+        app:layout_constraintStart_toStartOf="@id/myPageBuyHistoryImageButton"
+        app:layout_constraintEnd_toEndOf="@id/myPageBuyHistoryImageButton"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <!-- 관심목록 버튼 -->
+    <ImageButton
+        android:id="@+id/myPageLikeListImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_pink_circle"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintTop_toTopOf="@id/myPageBuyHistoryImageButton"
+        app:layout_constraintBottom_toBottomOf="@id/myPageBuyHistoryImageButton"
+        app:layout_constraintStart_toEndOf="@id/myPageBuyHistoryImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/myPageLikeListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/likeList"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/myPageLikeListImageButton"
+        app:layout_constraintStart_toStartOf="@id/myPageLikeListImageButton"
+        app:layout_constraintEnd_toEndOf="@id/myPageLikeListImageButton"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
